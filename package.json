@@ -1,0 +1,161 @@
+{
+    "author": "chops",
+    "dependencies": {},
+    "keywords": [],
+    "name": "day-night-tz",
+    "pebble": {
+        "displayName": "Day Night Timezones",
+        "enableMultiJS": false,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/three_worlds.png",
+                    "name": "THREE_WORLDS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/myBackground",
+                    "name": "IMAGE_BG2",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-satellite-dk1",
+                    "name": "DAY_PBL_V5",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-satellite-dk2",
+                    "name": "DAY_PBL",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-night-colsamples",
+                    "name": "NIGHT_PBLv5",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-night",
+                    "name": "NIGHT_PBL",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-night-palette",
+                    "name": "NIGHT_PBLv2",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-satellite-light",
+                    "name": "DAY_PBL_V6",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-bw-outline",
+                    "name": "WORLD",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-col-outline",
+                    "name": "SIMPLE_DAY",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-natural",
+                    "name": "DAY_PBL_V10",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "fonts/LECO_1976-Regular.ttf",
+                    "name": "FONT_LECO_14",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/LECO_1976-Regular.ttf",
+                    "name": "FONT_LECO_32",
+                    "type": "font"
+                },
+                {
+                    "file": "images/dnz-batt-100.png",
+                    "name": "IMAGE_BATT_100",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-90.png",
+                    "name": "IMAGE_BATT_90",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-80.png",
+                    "name": "IMAGE_BATT_80",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-70.png",
+                    "name": "IMAGE_BATT_70",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-60.png",
+                    "name": "IMAGE_BATT_60",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-50.png",
+                    "name": "IMAGE_BATT_50",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-40.png",
+                    "name": "IMAGE_BATT_40",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-30.png",
+                    "name": "IMAGE_BATT_30",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-20.png",
+                    "name": "IMAGE_BATT_20",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-10.png",
+                    "name": "IMAGE_BATT_10",
+                    "type": "png"
+                },
+                {
+                    "file": "images/dnz-batt-chg.png",
+                    "name": "IMAGE_BATT_CHARGING",
+                    "type": "png"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite",
+            "emery"
+        ],
+        "uuid": "9b0ee598-e9f5-4b4f-96b1-55325ad179a0",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "2.0.0"
+}
