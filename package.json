@@ -1,15 +1,124 @@
 {
     "author": "chops",
-    "dependencies": {},
+    "dependencies": {
+        "pebble-clay": "^1.0.2"
+    },
     "keywords": [],
     "name": "day-night-tz",
     "pebble": {
-        "displayName": "Day Night Timezones",
-        "enableMultiJS": false,
-        "messageKeys": [],
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Day Night TZ",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "mapstyle",
+            "bluetoothvibe",
+            "hourlyvibe"
+        ],
         "projectType": "native",
         "resources": {
             "media": [
+                {
+                    "file": "images/menu.png",
+                    "menuIcon": true,
+                    "name": "MENU_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/BWGRID.png",
+                    "name": "BW_GRID",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/earths-natural-bw-dither2.png",
+                    "name": "NAT_DITHER_2",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/earths-natural-bw-dither3.png",
+                    "name": "NAT_DITHER_3",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/earths-natural-bw-dither1.png",
+                    "name": "NAT_DITHER_1",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/three_worlds-bwdiffusion.png",
+                    "name": "DOTS",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/inversed",
+                    "name": "BW_INV",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/solid-bw",
+                    "name": "BW_SOLID",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/world-2colour",
+                    "name": "SIMPLE_DAY",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-satellite-bw-outline.png",
+                    "name": "BW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/world-satellite-light",
+                    "name": "DAY_PBL",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-satellite-dark",
+                    "name": "DAY_PBL_V5",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-satellite-medium",
+                    "name": "DAY_PBL_V6",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/world-natural-grid",
+                    "name": "DAY_PBL_V10",
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk"
+                    ],
+                    "type": "png"
+                },
+                {
+                    "file": "images/Header_Background",
+                    "name": "IMAGE_BG",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/1BITbandw",
+                    "name": "WORLD",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
                 {
                     "file": "images/three_worlds.png",
                     "name": "THREE_WORLDS",
@@ -17,130 +126,53 @@
                     "type": "bitmap"
                 },
                 {
-                    "file": "images/myBackground",
-                    "name": "IMAGE_BG2",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/world-satellite-dk1",
-                    "name": "DAY_PBL_V5",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/world-satellite-dk2",
-                    "name": "DAY_PBL",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
                     "file": "images/world-night-colsamples",
                     "name": "NIGHT_PBLv5",
-                    "targetPlatforms": null,
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk"
+                    ],
                     "type": "png"
                 },
                 {
                     "file": "images/world-night",
                     "name": "NIGHT_PBL",
-                    "targetPlatforms": null,
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk"
+                    ],
                     "type": "png"
                 },
                 {
                     "file": "images/world-night-palette",
                     "name": "NIGHT_PBLv2",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/world-satellite-light",
-                    "name": "DAY_PBL_V6",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/world-bw-outline",
-                    "name": "WORLD",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/world-col-outline",
-                    "name": "SIMPLE_DAY",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/world-natural",
-                    "name": "DAY_PBL_V10",
-                    "targetPlatforms": null,
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk"
+                    ],
                     "type": "png"
                 },
                 {
                     "file": "fonts/LECO_1976-Regular.ttf",
                     "name": "FONT_LECO_14",
+                    "targetPlatforms": null,
                     "type": "font"
                 },
                 {
                     "characterRegex": "[0-9:]",
                     "file": "fonts/LECO_1976-Regular.ttf",
-                    "name": "FONT_LECO_32",
+                    "name": "FONT_LECO_40",
+                    "targetPlatforms": null,
+                    "trackingAdjust": -1,
                     "type": "font"
                 },
                 {
-                    "file": "images/dnz-batt-100.png",
-                    "name": "IMAGE_BATT_100",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-90.png",
-                    "name": "IMAGE_BATT_90",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-80.png",
-                    "name": "IMAGE_BATT_80",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-70.png",
-                    "name": "IMAGE_BATT_70",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-60.png",
-                    "name": "IMAGE_BATT_60",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-50.png",
-                    "name": "IMAGE_BATT_50",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-40.png",
-                    "name": "IMAGE_BATT_40",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-30.png",
-                    "name": "IMAGE_BATT_30",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-20.png",
-                    "name": "IMAGE_BATT_20",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-10.png",
-                    "name": "IMAGE_BATT_10",
-                    "type": "png"
-                },
-                {
-                    "file": "images/dnz-batt-chg.png",
-                    "name": "IMAGE_BATT_CHARGING",
-                    "type": "png"
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/LECO_1976-Regular.ttf",
+                    "name": "FONT_LECO_44",
+                    "targetPlatforms": null,
+                    "trackingAdjust": -1,
+                    "type": "font"
                 }
             ]
         },
@@ -149,8 +181,7 @@
             "aplite",
             "basalt",
             "chalk",
-            "diorite",
-            "emery"
+            "diorite"
         ],
         "uuid": "9b0ee598-e9f5-4b4f-96b1-55325ad179a0",
         "watchapp": {
