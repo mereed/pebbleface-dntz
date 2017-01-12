@@ -20,65 +20,10 @@
         "resources": {
             "media": [
                 {
-                    "file": "images/menu.png",
-                    "menuIcon": true,
-                    "name": "MENU_ICON",
-                    "targetPlatforms": null,
-                    "type": "bitmap"
-                },
-                {
-                    "file": "images/BWGRID.png",
-                    "name": "BW_GRID",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/earths-natural-bw-dither2.png",
-                    "name": "NAT_DITHER_2",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/earths-natural-bw-dither3.png",
-                    "name": "NAT_DITHER_3",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/earths-natural-bw-dither1.png",
-                    "name": "NAT_DITHER_1",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/three_worlds-bwdiffusion.png",
-                    "name": "DOTS",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/inversed",
-                    "name": "BW_INV",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/solid-bw",
-                    "name": "BW_SOLID",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/world-2colour",
-                    "name": "SIMPLE_DAY",
+                    "file": "images/world-satellite-medium",
+                    "name": "DAY_PBL_V6",
                     "targetPlatforms": null,
                     "type": "png"
-                },
-                {
-                    "file": "images/world-satellite-bw-outline.png",
-                    "name": "BW",
-                    "targetPlatforms": null,
-                    "type": "bitmap"
                 },
                 {
                     "file": "images/world-satellite-light",
@@ -93,37 +38,19 @@
                     "type": "png"
                 },
                 {
-                    "file": "images/world-satellite-medium",
-                    "name": "DAY_PBL_V6",
+                    "file": "images/world-satellite-bw-outline.png",
+                    "name": "BW",
                     "targetPlatforms": null,
-                    "type": "png"
+                    "type": "bitmap"
                 },
                 {
-                    "file": "images/world-natural-grid",
-                    "name": "DAY_PBL_V10",
+                    "file": "images/world-night-palette",
+                    "name": "NIGHT_PBLv2",
                     "targetPlatforms": [
                         "basalt",
                         "chalk"
                     ],
                     "type": "png"
-                },
-                {
-                    "file": "images/Header_Background",
-                    "name": "IMAGE_BG",
-                    "targetPlatforms": null,
-                    "type": "png"
-                },
-                {
-                    "file": "images/1BITbandw",
-                    "name": "WORLD",
-                    "targetPlatforms": null,
-                    "type": "pbi"
-                },
-                {
-                    "file": "images/three_worlds.png",
-                    "name": "THREE_WORLDS",
-                    "targetPlatforms": null,
-                    "type": "bitmap"
                 },
                 {
                     "file": "images/world-night-colsamples",
@@ -144,8 +71,8 @@
                     "type": "png"
                 },
                 {
-                    "file": "images/world-night-palette",
-                    "name": "NIGHT_PBLv2",
+                    "file": "images/world-natural-grid",
+                    "name": "DAY_PBL_V10",
                     "targetPlatforms": [
                         "basalt",
                         "chalk"
@@ -153,9 +80,84 @@
                     "type": "png"
                 },
                 {
-                    "file": "fonts/LECO_1976-Regular.ttf",
-                    "name": "FONT_LECO_14",
+                    "file": "images/world-2colour",
+                    "name": "SIMPLE_DAY",
                     "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/three_worlds.png",
+                    "name": "THREE_WORLDS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/three_worlds-bwdiffusion.png",
+                    "name": "DOTS",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/solid-bw",
+                    "name": "BW_SOLID",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/menu.png",
+                    "menuIcon": true,
+                    "name": "MENU_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/inversed",
+                    "name": "BW_INV",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/earths-natural-bw-dither3.png",
+                    "name": "NAT_DITHER_3",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/earths-natural-bw-dither2.png",
+                    "name": "NAT_DITHER_2",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/earths-natural-bw-dither1.png",
+                    "name": "NAT_DITHER_1",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/Header_Background",
+                    "name": "IMAGE_BG",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BWGRID.png",
+                    "name": "BW_GRID",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "file": "images/1BITbandw",
+                    "name": "WORLD",
+                    "targetPlatforms": null,
+                    "type": "pbi"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/LECO_1976-Regular.ttf",
+                    "name": "FONT_LECO_44",
+                    "targetPlatforms": null,
+                    "trackingAdjust": -1,
                     "type": "font"
                 },
                 {
@@ -167,11 +169,9 @@
                     "type": "font"
                 },
                 {
-                    "characterRegex": "[0-9:]",
                     "file": "fonts/LECO_1976-Regular.ttf",
-                    "name": "FONT_LECO_44",
+                    "name": "FONT_LECO_14",
                     "targetPlatforms": null,
-                    "trackingAdjust": -1,
                     "type": "font"
                 }
             ]
