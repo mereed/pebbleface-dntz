@@ -13,6 +13,14 @@ typedef struct ClaySettings {
 
 } __attribute__((__packed__)) ClaySettings;
 
+// TODO make these configurable, not macros
+// NOTE location on screen is CITY1 CITY3 CITY2
+#define CITY1_name "NY (-)"
+#define CITY1_offset -5  // NOTE not DST aware
+#define CITY2_name "(+) Tokyo"
+#define CITY2_offset 9
+#define CITY3_name "UTC"
+#define CITY3_offset 0
 
 static void prv_default_settings();
 static void prv_load_settings();

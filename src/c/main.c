@@ -321,7 +321,7 @@ static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
   //NEW YORK START
   time_t now_1 = time(NULL);
   CITY1_time = gmtime(&now_1);
-  CITY1_time->tm_hour -= 5;  // MODIFY (the number) for left time zone. if -ve TZ then use -=    if +ve TZ then use +=
+  CITY1_time->tm_hour += CITY1_offset;
   if (CITY1_time->tm_hour > 23) {
    CITY1_time->tm_hour -= 24;
   }  
@@ -336,7 +336,7 @@ static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
   //JAPAN START
   time_t now_2 = time(NULL);
   CITY2_time = gmtime(&now_2);
-  CITY2_time->tm_hour += 9; // MODIFY for right time zone. if -ve TZ then use -=   if +ve TZ then use +=
+  CITY2_time->tm_hour += CITY2_offset;
   if (CITY2_time->tm_hour > 23) {
    CITY2_time->tm_hour -= 24;
   }  
@@ -351,7 +351,7 @@ static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
   //GMT/UTC START
   time_t now_3 = time(NULL);
   CITY3_time = gmtime(&now_3); 
-  // CITY3_time->tm_hour += 9;//  uncomment and MODIFY (as above) for middle timezone, if you wish to use something othe than UTC here
+  CITY3_time->tm_hour += CITY3_offset;
   strftime(time_CITY3_text, sizeof(time_CITY3_text), "%R", CITY3_time);
   text_layer_set_text(time_CITY3_text_layer, time_CITY3_text);
   //GMT END 
@@ -418,7 +418,6 @@ static void window_load(Window *window) {
   layer_add_child( window_layer, text_layer_get_layer( text_ampm_layer ) );	
 	
 	
-//============================== bits to edit in here ==================================//	
 	
 	//new york
 #if PBL_PLATFORM_CHALK
@@ -441,7 +440,7 @@ static void window_load(Window *window) {
   text_layer_set_background_color(CITY1txt, GColorClear);
   text_layer_set_text_color(CITY1txt, GColorBlack);
   text_layer_set_font(CITY1txt, fonts_get_system_font(FONT_KEY_GOTHIC_14));
-  text_layer_set_text(CITY1txt, "NY (-)"); // EDIT NAME or abberviation (only orange text) you wish to use
+  text_layer_set_text(CITY1txt, CITY1_name);
   text_layer_set_text_alignment(CITY1txt, GTextAlignmentLeft);
   layer_add_child(window_layer, text_layer_get_layer(CITY1txt));  
 	
@@ -466,7 +465,7 @@ static void window_load(Window *window) {
   text_layer_set_background_color(CITY2txt, GColorClear);
   text_layer_set_text_color(CITY2txt, GColorBlack);
   text_layer_set_font(CITY2txt, fonts_get_system_font(FONT_KEY_GOTHIC_14));
-  text_layer_set_text(CITY2txt, "(+) Tokyo"); // EDIT NAME or abberviation you wish to use
+  text_layer_set_text(CITY2txt, CITY2_name);
   text_layer_set_text_alignment(CITY2txt, GTextAlignmentRight);
   layer_add_child(window_layer, text_layer_get_layer(CITY2txt));  	
 	
@@ -491,11 +490,10 @@ static void window_load(Window *window) {
   text_layer_set_background_color(CITY3txt, GColorClear);
   text_layer_set_text_color(CITY3txt, GColorBlack);
   text_layer_set_font(CITY3txt, fonts_get_system_font(FONT_KEY_GOTHIC_14));
-  text_layer_set_text(CITY3txt, "UTC"); // EDIT NAME or abberviation, if you wish to use something else
+  text_layer_set_text(CITY3txt, CITY3_name);
   text_layer_set_text_alignment(CITY3txt, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(CITY3txt));  	
 	
-//============================================================================//
 	
 // The horizontal lines
 #if PBL_PLATFORM_CHALK
@@ -694,4 +692,3 @@ int main(void) {
   app_event_loop();
   deinit();
 }
-
